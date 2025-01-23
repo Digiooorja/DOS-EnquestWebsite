@@ -296,3 +296,20 @@ $(document).ready(function($) {
 
 });
 
+  // JavaScript to toggle the dropdown
+  document.addEventListener('DOMContentLoaded', () => {
+    const dropdown = document.getElementById('services-dropdown');
+
+    // Toggle dropdown on click
+    dropdown.addEventListener('click', (event) => {
+      event.preventDefault();
+      dropdown.classList.toggle('open-menu');
+    });
+
+    // Close dropdown if clicked outside
+    document.addEventListener('click', (event) => {
+      if (!dropdown.contains(event.target)) {
+        dropdown.classList.remove('open-menu');
+      }
+    });
+  });
