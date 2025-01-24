@@ -17,6 +17,11 @@ p{
     line-height: 28px;
 }
 
+h1{text-align: center; font-family: 'Exo', sans-serif; background-color: white; padding: 10px; color: #673536;}
+                .certificate-container {display: flex; justify-content: space-evenly; margin-top: 20px;}
+                .certificate-container img {max-height: 200px;}
+                /* .certificate-container img {width: 10%;} */
+
 .logo-background{height: 120px; width: 267px; background-color:#FFFFFF; border-bottom-right-radius: 70px; border-bottom-left-radius: 3px; display: flex; align-items: center; justify-content: center;}
 
 .header-div {
