@@ -71,7 +71,13 @@ h1{text-align: center; font-family: 'Exo', sans-serif; background-color: white; 
     font-weight: 500px;
   }
 
-
+  .bottom-center-img {
+    position: absolute;
+    bottom: -120px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    }
 
 .div3{
     background-color: #F8F8F8;height: 1320px;
@@ -203,7 +209,13 @@ body {
         padding: 10px;
       }
   
-
+      .next-step-block{
+        display: block;
+        min-height: 260px;
+        width: 100%;
+        position: relative;
+    }
+    
 
     /* Responsive styles */
     @media (max-width: 768px) {
@@ -234,6 +246,9 @@ body {
       .cards-div{display: none;}
       .general-header{height: 650px; }
       .header-div{height: 800px; }
+      .next-step-block{
+          display: none;
+      }
     }
 
 .cards-div{
@@ -642,6 +657,9 @@ span{
     }
     .bottom-right-text{
         font-size: 12px;
+    }
+    .next-step-block{
+        display: none;
     }
 
 }
