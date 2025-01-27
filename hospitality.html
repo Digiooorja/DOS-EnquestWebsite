@@ -279,6 +279,36 @@
         </div>
     </div>
   </footer>
+  <script>
+    // JavaScript to handle responsive menu
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuButton = document.getElementById('menu-button');
+      const navLinks = document.getElementById('nav-links');
+    //   const dropdown = document.getElementById('services-dropdown');
+  
+      // Toggle menu on click
+      menuButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+  
+    //   // Toggle dropdown on click
+    //   dropdown.addEventListener('click', (event) => {
+    //     event.preventDefault();
+    //     dropdown.classList.toggle('open-menu');
+    //   });
+  
+      // Close dropdown and menu if clicked outside
+      document.addEventListener('click', (event) => {
+        if (!menuButton.contains(event.target) && !navLinks.contains(event.target)) {
+          navLinks.classList.remove('active');
+        }
+        // if (!dropdown.contains(event.target)) {
+        //   dropdown.classList.remove('open-menu');
+        // }
+      });
+    });
+  </script>
+
 
 
   
