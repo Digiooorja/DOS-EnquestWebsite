@@ -70,9 +70,7 @@ h1{text-align: center; font-family: 'Exo', sans-serif; background-color: white; 
     font-size: 20px;
     font-weight: 500px;
   }
-.cards-div{
-    background-color: #F8F8F8;min-height: 260px;width: 100%;
-}
+
 
 
 .div3{
@@ -212,7 +210,6 @@ body {
       .nav-links {
         display: none;
         flex-direction: column;
-        gap: 10px;
         background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
         top: 60px;
@@ -234,9 +231,24 @@ body {
       .nav-getintouch{
         display: none;
       }
-
+      .cards-div{display: none;}
+      .general-header{height: 650px; }
+      .header-div{height: 800px; }
     }
-      
+
+.cards-div{
+    background-color: #F8F8F8;min-height: 260px;width: 100%;display: block;
+}
+
+.card-box{
+    border-radius: 10px;
+    border: 1px; 
+    height: 204.12px;
+    width: 250px;
+    background-color:#FFFFFF ;
+    margin-top: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 .card-title{
     height: 162px; 
     width: 210px; 
@@ -582,11 +594,18 @@ span{
     .line-divider2 {
         margin-top: -43px;
     }
+    .bottom-right-text{
+        font-size: 13px;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
     .about-page-card {
         height: 270px;
     }
+    .nav-links {
+        gap: 5px;
+      }
+
 }
 @media (min-width: 768px) and (max-width: 992px) {
     .line-divider1 {
@@ -595,10 +614,20 @@ span{
     .line-divider2 {
         margin-top: -44px;
     }
+    .bottom-right-text{
+        font-size: 12px;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 1199px) {
     .about-page-card {
         height: 300px;
+    }
+    .nav-links {
+        gap: 0px;
+      }
+      .bottom-right-text{
+        font-size: 12px;
     }
 }
 @media (max-width: 767.99px) {
@@ -611,6 +640,15 @@ span{
     .vision-bullets {
         display: none;
     }
+    .bottom-right-text{
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 1400px) {
+    .anchor-container a{
+    font-size: 14px;
+}
 }
 /* about us page area style end */
 
